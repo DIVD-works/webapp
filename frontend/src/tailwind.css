@@ -6,6 +6,8 @@ h3 {
     @apply font-serif;
 }
 
-p {
+p,
+a,
+button {
     @apply font-mono;
 }
