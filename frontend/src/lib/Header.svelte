@@ -1,33 +1,22 @@
 <script lang="ts">
-    import Icon from "@iconify/svelte";
     import Navigation from "./Navigation.svelte";
     import User from "./User.svelte";
+    import Works from "./Works.svelte";
+    import Menu from "./Menu.svelte";
 
+    const icon_set: string = "mdi:hamburger-open";
     let menu_open: boolean = false;
-    const menu_state: () => boolean = (): boolean => (menu_open = !menu_open);
+    const toggleNavigation: () => boolean = (): boolean =>
+        (menu_open = !menu_open);
 </script>
 
 <header class="w-full h-20 flex items-center justify-between px-5">
-    <a href="/" data-sveltekit-reload>
-        <img
-            src="src/lib/assets/works.svg"
-            alt="works logo"
-            class="w-40 h-12 sm:w-48 sm:h-14 invert-0 dark:invert"
-        />
-    </a>
+    <Works />
     <article>
         <User />
-        <button
-            on:click={menu_state}
-            class="hover:bg-purple-600 rounded-full p-1 duration-200 ease-out hover:ease-in cursor-pointer"
-        >
-            <Icon
-                icon="mdi:hamburger-open"
-                class="w-10 h-10 sm:w-12 sm:h-12 text-black dark:text-white"
-            />
-        </button>
+        <Menu {icon_set} on:toggle_navigation={toggleNavigation} />
     </article>
 </header>
 {#if menu_open}
-    <Navigation menu_open />
+    <Navigation menu_open on:toggle_navigation={toggleNavigation} />
 {/if}
