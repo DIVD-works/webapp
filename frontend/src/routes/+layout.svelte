@@ -9,12 +9,12 @@
     <link rel="icon" href={favicon} />
     <metadata>
         <title>Home - DIVD.works</title>
-        <meta
-            name="description"
-            content="Powered by Purpose - The goal of the DIVD.works project is to create a platform that brings
-            together young digital talent and employers."
-        />
     </metadata>
+    <meta
+        name="description"
+        content="Powered by Purpose - The goal of the DIVD.works project is to create a platform that brings
+        together young digital talent and employers."
+    />
 </svelte:head>
 
 {@render children?.()}

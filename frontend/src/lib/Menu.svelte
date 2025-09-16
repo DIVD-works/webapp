@@ -13,6 +13,7 @@
 <button
     on:click={toggleNavigation}
     class="hover:bg-purple-600 rounded-full p-1 duration-200 ease-out hover:ease-in cursor-pointer"
+    title="Menu Icon - Toggle Navigation"
 >
     <Icon
         icon={icon_set}
