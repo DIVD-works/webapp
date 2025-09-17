@@ -20,7 +20,7 @@
 {@render children?.()}
 
 <style>
-    :global(body) {
+    :global(.banner) {
         background:
             linear-gradient(rgba(0, 0, 0, 0.9)),
             url("src/lib/assets/banner.jpg");

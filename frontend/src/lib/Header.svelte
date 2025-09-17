@@ -10,7 +10,9 @@
         (menu_open = !menu_open);
 </script>
 
-<header class="w-full h-20 flex items-center justify-between px-3 md:px-5">
+<header
+    class="w-full h-20 flex items-center justify-between px-3 md:px-5 sticky top-0 bg-purple-100 dark:bg-purple-900"
+>
     <Works />
     <article>
         <User />
