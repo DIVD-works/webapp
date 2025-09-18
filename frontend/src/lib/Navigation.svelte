@@ -17,7 +17,7 @@
 </script>
 
 <section
-    class="fixed inset-0 bg-[#D832E6] dark:bg-[#95389E] z-0"
+    class="fixed inset-0 bg-[#D832E6] dark:bg-[#95389E] z-10"
     transition:slide
 >
     {#if menu_open}

@@ -1,6 +1,8 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
     import Header from "$lib/Header.svelte";
+    import { home_cards } from "$lib/types";
+    import Icon from "@iconify/svelte";
 </script>
 
 <Header />
@@ -38,8 +40,8 @@
                     >{"Apply now!".toUpperCase()}</button
                 >
                 <button
-                    class="w-full h-16 rounded-2xl border-1 cursor-pointer hover:bg-gray-800 duration-200 ease-out
-                    hover:ease-in"
+                    class="w-full h-16 rounded-2xl border-1 cursor-pointer hover:bg-gray-800 duration-200
+                    ease-out hover:ease-in"
                     on:click={(): Promise<void> => goto("/")}
                     >{"Internships".toUpperCase()}</button
                 >
@@ -76,7 +78,7 @@
                 hover:ease-in"
                 on:click={(): Promise<void> => goto("/")}
             >
-                Learn more
+                {"Learn more!".toUpperCase()}
             </button>
         </article>
     </section>
@@ -86,13 +88,38 @@
         dark:bg-slate-950"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8 md:gap-20"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
         >
             <h2
-                class="text-purple-500 text-3xl sm:text-5xl md:text-6xl font-extrabold"
+                class="text-black dark:text-white text-3xl sm:text-5xl md:text-6xl font-extrabold"
             >
                 Why choose us?
             </h2>
+            <div
+                class="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6"
+            >
+                {#each home_cards as card}
+                    <article
+                        class="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 place-items-center"
+                    >
+                        <h3
+                            class="text-purple-500 text-3xl sm:text-4xl font-semibold"
+                        >
+                            {card.title}
+                        </h3>
+                        <p
+                            class="text-gray-700 dark:text-gray-300 my-3 text-base sm:text-lg text-center"
+                        >
+                            {card.slogan}
+                        </p>
+                        <Icon
+                            icon={card.icon}
+                            class="w-14 sm:w-16 h-14 sm:h-16 text-black dark:text-white scale-100 hover:scale-110
+                            duration-200 ease-out hover:ease-in"
+                        />
+                    </article>
+                {/each}
+            </div>
         </article>
     </section>
     <!-- Technlogy section -->
@@ -101,13 +128,22 @@
         dark:bg-black"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8 md:gap-20"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
         >
             <h2
                 class="text-purple-500 text-3xl sm:text-5xl md:text-6xl font-extrabold"
             >
                 Technlogy
             </h2>
+            <p class="text-gray-700 dark:text-gray-300 text-base sm:text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quibusdam dolor, sunt tenetur velit molestiae accusamus ut eum,
+                suscipit ipsam ipsa ipsum! Cumque rerum quod accusamus modi
+                dolorum totam soluta animi. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Quibusdam dolor, sunt tenetur
+                velit molestiae accusamus ut eum, suscipit ipsam ipsa ipsum!
+                Cumque rerum quod accusamus modi dolorum totam soluta animi.
+            </p>
         </article>
     </section>
     <!-- Newsletter section -->
@@ -116,13 +152,46 @@
         dark:bg-slate-950"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8 md:gap-20"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col md:flex-row gap-8"
         >
-            <h2
-                class="text-purple-500 text-3xl sm:text-5xl md:text-6xl font-extrabold"
+            <div class="w-full">
+                <h2
+                    class="text-purple-500 text-3xl sm:text-5xl md:text-6xl font-extrabold"
+                >
+                    Newsletter
+                </h2>
+                <p
+                    class="text-gray-700 dark:text-gray-300 my-8 text-lg sm:text-xl"
+                >
+                    Welcome to the DIVD.works newsletter! Do you want to stay up
+                    to date of the latest updates, new projects, inspiring
+                    stories from students and companies? Then sign up for our
+                    newsletter!
+                </p>
+                <button
+                    class="bg-black dark:bg-white w-full sm:w-60 h-12 rounded-2xl cursor-pointer text-white
+                    dark:text-black text-xl font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 duration-200 ease-out
+                    hover:ease-in"
+                    on:click={(): Promise<void> => goto("/")}
+                >
+                    {"To newsletter!".toUpperCase()}
+                </button>
+            </div>
+            <div
+                class="w-full h-full bg-gray-200 dark:bg-gray-800 flex flex-col items-center p-8 rounded-3xl
+                border border-purple-500"
             >
-                Newsletter
-            </h2>
+                <article>
+                    <h3
+                        class="text-black dark:text-white text-3xl sm:text-4xl font-semibold mb-8"
+                    >
+                        DIVD.works
+                    </h3>
+                    {#each { length: 8 }}
+                        <hr class="text-black dark:text-white h-6" />
+                    {/each}
+                </article>
+            </div>
         </article>
     </section>
     <!-- Looking for opportunities section -->
@@ -144,7 +213,7 @@
                 hover:ease-in"
                 on:click={(): Promise<void> => goto("/")}
             >
-                Ask on Discord
+                {"Ask on Discord!".toUpperCase()}
             </button>
         </article>
     </section>
