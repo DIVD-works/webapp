@@ -1,5 +1,6 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
+    import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
     import { home_cards, technology_icons } from "$lib/types";
     import Icon from "@iconify/svelte";
@@ -239,3 +240,4 @@
         </article>
     </section>
 </main>
+<Footer />
