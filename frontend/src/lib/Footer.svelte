@@ -23,19 +23,20 @@
                 individuals from feeling discouraged.
             </p>
             <p class="pt-4 text-sm">
-                © {copyright_year()} DIVD.works, Inc. All rights reserved.
+                &copy; {copyright_year()} DIVD.works, Inc. All rights reserved.
             </p>
         </div>
-        <ul
-            class="col-span-12 sm:col-span-6 lg:col-span-3 list-disc pt-8 text-sm marker:text-purple-500 pl-3"
+        <div
+            class="col-span-12 sm:col-span-6 lg:col-span-3 list-disc pt-8 text-base marker:text-purple-500 pl-3"
         >
-            <a href="/"><li class="underline">About DIVD.works</li></a>
-            <a href="/"><li class="py-4 underline">Working at DIVD.works</li></a
+            <a href="/" class="underline list-item">About DIVD.works</a>
+            <a href="/" class="py-4 underline list-item"
+                >Working at DIVD.works</a
             >
-            <a href="/"><li class="underline">Privacy Statement</li></a>
-            <a href="/"><li class="py-4 underline">Terms & Conditions</li></a>
-            <a href="/"><li class="underline">Cookies</li></a>
-        </ul>
+            <a href="/" class="underline list-item">Privacy Statement</a>
+            <a href="/" class="py-4 underline list-item">Terms & Conditions</a>
+            <a href="/" class="underline list-item">Cookies</a>
+        </div>
         <div class="col-span-12 sm:col-span-6 lg:col-span-3 pt-8 text-sm">
             <h3 class="font-semibold text-3xl pb-2">HQ Office</h3>
             <a href="/" class="underline text-gray-700 dark:text-gray-300"

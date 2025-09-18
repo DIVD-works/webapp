@@ -1,5 +1,4 @@
 <script lang="ts">
-    import Icon from "@iconify/svelte";
     import User from "./User.svelte";
     import { navigation_routes } from "./types";
     import Works from "./Works.svelte";
