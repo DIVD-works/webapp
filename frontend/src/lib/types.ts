@@ -84,3 +84,51 @@ export const home_cards: HomeCards<string>[] = [
     icon: "mdi:bird",
   },
 ];
+
+export type TechnologyIcons<T> = {
+  icon: T;
+  style: T;
+};
+
+export const technology_icons: TechnologyIcons<string>[] = [
+  {
+    icon: "tabler:brand-svelte",
+    style: "text-orange-600",
+  },
+  {
+    icon: "mdi:language-typescript",
+    style: "text-blue-500",
+  },
+  {
+    icon: "mdi:tailwind",
+    style: "text-sky-400",
+  },
+  {
+    icon: "mdi:language-rust",
+    style: "text-orange-500",
+  },
+  {
+    icon: "mdi:database",
+    style: "text-yellow-400",
+  },
+  {
+    icon: "mdi:language-python",
+    style: "text-green-500",
+  },
+  {
+    icon: "tabler:brand-flutter",
+    style: "text-blue-300",
+  },
+  {
+    icon: "mdi:github",
+    style: "text-black dark:text-white",
+  },
+  {
+    icon: "mdi:linux",
+    style: "text-black dark:text-white",
+  },
+  {
+    icon: "mdi:google",
+    style: "text-red-500",
+  },
+];

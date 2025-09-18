@@ -1,7 +1,7 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
     import Header from "$lib/Header.svelte";
-    import { home_cards } from "$lib/types";
+    import { home_cards, technology_icons } from "$lib/types";
     import Icon from "@iconify/svelte";
 </script>
 
@@ -35,16 +35,18 @@
                 font-semibold"
             >
                 <button
-                    class="bg-purple-500 w-full h-16 rounded-2xl cursor-pointer"
+                    class="bg-purple-600 w-full h-16 rounded-2xl cursor-pointer"
                     on:click={(): Promise<void> => goto("/")}
-                    >{"Apply now!".toUpperCase()}</button
                 >
+                    {"Apply now!".toUpperCase()}
+                </button>
                 <button
                     class="w-full h-16 rounded-2xl border-1 cursor-pointer hover:bg-gray-800 duration-200
                     ease-out hover:ease-in"
                     on:click={(): Promise<void> => goto("/")}
-                    >{"Internships".toUpperCase()}</button
                 >
+                    {"Internships".toUpperCase()}
+                </button>
             </div>
         </article>
     </section>
@@ -57,7 +59,7 @@
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
         >
             <h2
-                class="text-purple-500 text-3xl sm:text-5xl md:text-6xl font-extrabold"
+                class="text-purple-500 text-4xl sm:text-5xl md:text-6xl font-extrabold"
             >
                 Our Definement
             </h2>
@@ -73,9 +75,8 @@
                 click the button below for more information about how work.
             </p>
             <button
-                class="bg-purple-500 w-full sm:w-50 h-12 rounded-2xl cursor-pointer text-black dark:text-white
-                text-xl font-semibold hover:bg-purple-400 dark:hover:bg-purple-600 duration-200 ease-out
-                hover:ease-in"
+                class="bg-purple-600 w-full sm:w-50 h-12 rounded-2xl cursor-pointer text-black dark:text-white
+                text-xl font-semibold hover:bg-purple-700 duration-200 ease-out hover:ease-in"
                 on:click={(): Promise<void> => goto("/")}
             >
                 {"Learn more!".toUpperCase()}
@@ -91,7 +92,7 @@
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
         >
             <h2
-                class="text-black dark:text-white text-3xl sm:text-5xl md:text-6xl font-extrabold"
+                class="text-black dark:text-white text-4xl sm:text-5xl md:text-6xl font-extrabold"
             >
                 Why choose us?
             </h2>
@@ -128,22 +129,44 @@
         dark:bg-black"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col md:flex-row gap-8"
         >
-            <h2
-                class="text-purple-500 text-3xl sm:text-5xl md:text-6xl font-extrabold"
-            >
-                Technlogy
-            </h2>
-            <p class="text-gray-700 dark:text-gray-300 text-base sm:text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Quibusdam dolor, sunt tenetur velit molestiae accusamus ut eum,
-                suscipit ipsam ipsa ipsum! Cumque rerum quod accusamus modi
-                dolorum totam soluta animi. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Quibusdam dolor, sunt tenetur
-                velit molestiae accusamus ut eum, suscipit ipsam ipsa ipsum!
-                Cumque rerum quod accusamus modi dolorum totam soluta animi.
-            </p>
+            <div class="w-full flex flex-col items-center">
+                <img
+                    src="src/lib/assets/Powered by Purpose.png"
+                    alt="Powered by Purpose"
+                    class="hue-rotate-230 h-100 sm:h-130 md:h-160"
+                    fetchpriority="high"
+                />
+            </div>
+            <div class="w-full flex flex-col items-center md:items-start">
+                <h2
+                    class="text-black dark:text-white text-5xl md:text-6xl font-extrabold"
+                >
+                    Technlogy
+                </h2>
+                <p
+                    class="text-gray-700 dark:text-gray-300 my-8 text-base sm:text-lg text-center md:text-left"
+                >
+                    We use the latest technologies and tools with we experience
+                    in. To stay up to date with the latest trends and really be
+                    able to stand out. The working in the open culture makes us
+                    of the few that are transparent in what we do and how we do
+                    things.
+                </p>
+                <article
+                    class="w-full grid grid-cols-4 sm:grid-cols-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4
+                    sm:gap-6"
+                >
+                    {#each technology_icons as stack}
+                        <Icon
+                            icon={stack.icon}
+                            class="{stack.style} w-16 sm:w-20 h-16 sm:h-20 bg-gray-200 dark:bg-gray-800 rounded-xl p-2 scale-100
+                            hover:scale-110 duration-200 ease-out hover:ease-in"
+                        />
+                    {/each}
+                </article>
+            </div>
         </article>
     </section>
     <!-- Newsletter section -->
@@ -152,16 +175,14 @@
         dark:bg-slate-950"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col md:flex-row gap-8"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col md:flex-row gap-8 md:gap-12"
         >
-            <div class="w-full">
-                <h2
-                    class="text-purple-500 text-3xl sm:text-5xl md:text-6xl font-extrabold"
-                >
+            <div class="w-full flex flex-col items-center md:items-start">
+                <h2 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
                     Newsletter
                 </h2>
                 <p
-                    class="text-gray-700 dark:text-gray-300 my-8 text-lg sm:text-xl"
+                    class="text-gray-700 dark:text-gray-300 my-8 text-lg sm:text-xl text-center md:text-left"
                 >
                     Welcome to the DIVD.works newsletter! Do you want to stay up
                     to date of the latest updates, new projects, inspiring
@@ -203,13 +224,13 @@
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
         >
             <h2
-                class="text-black dark:text-white text-3xl sm:text-5xl md:text-6xl font-extrabold"
+                class="text-black dark:text-white text-3xl sm:text-5xl md:text-5xl font-extrabold"
             >
                 Looking for opportunities?
             </h2>
             <button
-                class="bg-purple-500 w-full sm:w-60 h-12 rounded-2xl cursor-pointer text-black dark:text-white
-                text-xl font-semibold hover:bg-purple-400 dark:hover:bg-purple-600 duration-200 ease-out
+                class="bg-purple-600 w-full sm:w-60 h-12 rounded-2xl cursor-pointer text-black dark:text-white
+                text-xl font-semibold hover:bg-purple-700 duration-200 ease-out
                 hover:ease-in"
                 on:click={(): Promise<void> => goto("/")}
             >
