@@ -25,7 +25,7 @@ export const navigation_routes: NavigationRoutes<string>[] = [
     item: "Growth",
   },
   {
-    url: "/",
+    url: "/careers",
     item: "Careers",
   },
   {
