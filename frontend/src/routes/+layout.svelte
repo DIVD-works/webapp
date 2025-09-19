@@ -1,6 +1,7 @@
 <script lang="ts">
     import "../tailwind.css";
     import favicon from "$lib/assets/favicon.svg";
+    import { page } from "$app/state";
 
     let { children } = $props();
 </script>
@@ -8,13 +9,9 @@
 <svelte:head>
     <link rel="icon" href={favicon} />
     <metadata>
-        <title>Home - DIVD.works</title>
+        <title>{page.data.title}</title>
+        <meta name="description" content={page.data.description} />
     </metadata>
-    <meta
-        name="description"
-        content="Powered by Purpose - The goal of the DIVD.works project is to create a platform that brings
-        together young digital talent and employers."
-    />
 </svelte:head>
 
 {@render children?.()}

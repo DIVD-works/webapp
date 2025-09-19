@@ -218,7 +218,7 @@
     </section>
     <!-- Looking for opportunities section -->
     <section
-        class="w-full flex justify-start md:justify-center px-3 lg:px-0 py-10 bg-white
+        class="w-full flex justify-start md:justify-center px-3 lg:px-0 pt-10 bg-white
         dark:bg-black"
     >
         <article

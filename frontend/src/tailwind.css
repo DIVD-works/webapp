@@ -11,3 +11,7 @@ a,
 button {
     @apply font-mono;
 }
+
+html {
+    @apply scroll-smooth;
+}

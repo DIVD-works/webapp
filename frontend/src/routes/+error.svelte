@@ -7,7 +7,7 @@
 <Header />
 <main class="bg-white dark:bg-black">
     <section
-        class="w-full h-[53vh] flex justify-start md:justify-center px-3 lg:px-0 py-10 bg-white
+        class="w-full h-[53vh] flex justify-start md:justify-center px-3 lg:px-0 pt-10 bg-white
         dark:bg-black"
     >
         <article

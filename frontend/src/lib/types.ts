@@ -21,7 +21,7 @@ export const navigation_routes: NavigationRoutes<string>[] = [
     item: "Workmethods",
   },
   {
-    url: "/",
+    url: "/growth",
     item: "Growth",
   },
   {
@@ -132,3 +132,8 @@ export const technology_icons: TechnologyIcons<string>[] = [
     style: "text-red-500",
   },
 ];
+
+export type SEO<T> = {
+  title: T;
+  description: T;
+};
