@@ -37,7 +37,7 @@ export const navigation_routes: NavigationRoutes<string>[] = [
     item: "Projects",
   },
   {
-    url: "/",
+    url: "/services",
     item: "Services",
   },
   {
@@ -156,5 +156,23 @@ export const internship_cards: Cards<string>[] = [
     slogan:
       "Build a robust foundation that prepares you for opportunities in international organizations and the broader digital economy.",
     icon: "mdi:stairs-up",
+  },
+];
+
+export const service_cards: Cards<string>[] = [
+  {
+    title: "Cybersecurity",
+    slogan: "Protects your data, prevents breaches.",
+    icon: "mdi:encryption-check",
+  },
+  {
+    title: "Vanilla Open-Source Support",
+    slogan: "Simplifies adoption, boosts collaboration.",
+    icon: "mdi:computer",
+  },
+  {
+    title: "Talent Growth",
+    slogan: "Expands knowledge, fuels progress.",
+    icon: "mdi:chart-areaspline",
   },
 ];
