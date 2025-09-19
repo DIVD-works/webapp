@@ -9,7 +9,7 @@ export const navigation_routes: NavigationRoutes<string>[] = [
     item: "Home",
   },
   {
-    url: "/",
+    url: "/internships",
     item: "Internships",
   },
   {
@@ -46,13 +46,13 @@ export const navigation_routes: NavigationRoutes<string>[] = [
   },
 ];
 
-export type HomeCards<T> = {
+export type Cards<T> = {
   title: T;
   slogan: T;
   icon: T;
 };
 
-export const home_cards: HomeCards<string>[] = [
+export const home_cards: Cards<string>[] = [
   {
     title: "Students",
     slogan: "Students gain Real-World experience",
@@ -137,3 +137,24 @@ export type SEO<T> = {
   title: T;
   description: T;
 };
+
+export const internship_cards: Cards<string>[] = [
+  {
+    title: "Skill Development",
+    slogan:
+      "Engage in hands-on projects that enhance both technical and soft skills crucial for the global digital landscape.",
+    icon: "mdi:tool-clock",
+  },
+  {
+    title: "International Exposure",
+    slogan:
+      "Collaborate with peers from around the world, gaining insights into diverse cultures and global practices.",
+    icon: "mdi:globe",
+  },
+  {
+    title: "Career Advancement",
+    slogan:
+      "Build a robust foundation that prepares you for opportunities in international organizations and the broader digital economy.",
+    icon: "mdi:stairs-up",
+  },
+];

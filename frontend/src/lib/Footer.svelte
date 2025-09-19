@@ -27,7 +27,7 @@
             </p>
         </div>
         <div
-            class="col-span-12 sm:col-span-6 lg:col-span-3 list-disc pt-8 text-base marker:text-purple-500 pl-3"
+            class="col-span-12 sm:col-span-6 lg:col-span-3 list-disc pt-8 text-base marker:text-purple-500 pl-4"
         >
             <a href="/" class="underline list-item">About DIVD.works</a>
             <a href="/" class="py-4 underline list-item"

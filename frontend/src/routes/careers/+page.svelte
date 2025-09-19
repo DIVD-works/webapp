@@ -32,12 +32,12 @@
                     fetchpriority="high"
                 />
             </div>
-            <div class="w-full flex flex-col items-center lg:items-start">
+            <div class="w-full flex flex-col items-start">
                 <h2 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
                     Careers
                 </h2>
                 <p
-                    class="text-gray-700 dark:text-gray-300 mt-8 text-base sm:text-lg text-center lg:text-left"
+                    class="text-gray-700 dark:text-gray-300 mt-8 text-base sm:text-lg"
                 >
                     Explore exciting career opportunities at DIVD.works! Our
                     portal connects you with the latest job openings and
@@ -56,7 +56,7 @@
         <article
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col lg:flex-row gap-8"
         >
-            <div class="w-full flex flex-col items-center">
+            <div class="w-full flex flex-col items-start">
                 <h2 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
                     Career opportunities
                 </h2>
@@ -67,7 +67,7 @@
                 </p>
                 <a
                     href="/"
-                    class="text-gray-700 dark:text-gray-300 text-base sm:text-lg text-center
+                    class="text-gray-700 dark:text-gray-300 text-base sm:text-lg
                     whitespace-pre underline"
                 >
                     {job_listings.map((value: string) => value).join("\n")}

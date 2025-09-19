@@ -24,7 +24,7 @@
                     empowering individuals to build meaningful careers, pursue
                     lifelong learning, and contribute to a sustainable and
                     purposeful world. Our commitment extends beyond just
-                    offering jobs – we focus on fostering education, mentorship,
+                    offering jobs. We focus on fostering education, mentorship,
                     and guidance that help individuals grow and make a lasting
                     impact. Together, we’re building a community that thrives on
                     personal and professional development with a clear sense of

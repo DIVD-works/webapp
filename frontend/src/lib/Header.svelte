@@ -11,7 +11,7 @@
 </script>
 
 <header
-    class="w-full h-16 sm:h-20 flex items-center justify-between px-3 md:px-5 sticky top-0 bg-purple-50
+    class="w-full h-16 sm:h-20 flex items-center justify-between px-3 md:px-5 sticky top-0 bg-purple-500
     dark:bg-purple-950 z-10"
 >
     <Works />
