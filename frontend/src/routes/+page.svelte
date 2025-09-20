@@ -134,7 +134,7 @@
         >
             <div class="w-full flex flex-col items-center">
                 <img
-                    src="src/lib/assets/Powered by Purpose.png"
+                    src="src/lib/assets/powered-by-purpose.png"
                     alt="Powered by Purpose"
                     class="hue-rotate-230 h-100 sm:h-130 md:h-160"
                     fetchpriority="high"

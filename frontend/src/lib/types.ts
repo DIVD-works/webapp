@@ -1,3 +1,15 @@
+import Victor from "$lib/assets/team/victor.jpg";
+import Akiko from "$lib/assets/team/akiko.jpeg";
+import Default from "$lib/assets/team/default.jpg";
+import Liam from "$lib/assets/team/liam.jpeg";
+import Baran from "$lib/assets/team/baran.jpeg";
+import Loek from "$lib/assets/team/loek.jpeg";
+import Luc from "$lib/assets/team/luc.jpeg";
+import Dirk from "$lib/assets/team/dirk.jpeg";
+import Nigel from "$lib/assets/team/nigel.png";
+import Ahmed from "$lib/assets/team/ahmed.jpg";
+import Marcel from "$lib/assets/team/marcel.jpg";
+
 export type NavigationRoutes<T> = {
   url: T;
   item: T;
@@ -13,7 +25,7 @@ export const navigation_routes: NavigationRoutes<string>[] = [
     item: "Internships",
   },
   {
-    url: "/",
+    url: "/about",
     item: "About",
   },
   {
@@ -174,5 +186,74 @@ export const service_cards: Cards<string>[] = [
     title: "Talent Growth",
     slogan: "Expands knowledge, fuels progress.",
     icon: "mdi:chart-areaspline",
+  },
+];
+
+export type Team<T> = {
+  source: T;
+  identifier: T;
+  position: T;
+};
+
+export const team: Team<string>[] = [
+  {
+    source: Victor,
+    identifier: "Victor Gevers",
+    position: "CEO",
+  },
+  {
+    source: Akiko,
+    identifier: "Akiko Takashima",
+    position: "Chief Financial Officer",
+  },
+  {
+    source: Default,
+    identifier: "Jared Hofman",
+    position: "SVP, Business Operations",
+  },
+  {
+    source: Liam,
+    identifier: "Liam Plokkaar",
+    position: "SVP, Sales",
+  },
+  {
+    source: Baran,
+    identifier: "Baran Canakci",
+    position: "Chief Marketing Officer",
+  },
+  {
+    source: Loek,
+    identifier: "Loek Ota",
+    position: "SVP, Chief People Office",
+  },
+  {
+    source: Luc,
+    identifier: "Luc van Kessel",
+    position: "SVP, Support",
+  },
+  {
+    source: Dirk,
+    identifier: "Dirk Rijntalder",
+    position: "SVP, Chief Legal Officer",
+  },
+  {
+    source: Nigel,
+    identifier: "Nigel van Maanen",
+    position: "Chief Creative Officer (CCO)",
+  },
+  {
+    source: Ahmed,
+    identifier: "Ahmed Ezzammouri",
+    position: "CISO",
+  },
+  {
+    source: Marcel,
+    identifier: "Marcel van der Kuil",
+    position: "COO",
+  },
+  {
+    source: Default,
+    identifier: "Vacant",
+    position: "Vacant",
   },
 ];
