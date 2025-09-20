@@ -10,6 +10,10 @@ import Nigel from "$lib/assets/team/nigel.png";
 import Ahmed from "$lib/assets/team/ahmed.jpg";
 import Marcel from "$lib/assets/team/marcel.jpg";
 
+import PGU from "$lib/assets/projects/project-global-universities.png";
+import ICY from "$lib/assets/projects/project-icy.png";
+import VLAM from "$lib/assets/projects/vlamai.png";
+
 export type NavigationRoutes<T> = {
   url: T;
   item: T;
@@ -45,7 +49,7 @@ export const navigation_routes: NavigationRoutes<string>[] = [
     item: "FAQ",
   },
   {
-    url: "/",
+    url: "/projects",
     item: "Projects",
   },
   {
@@ -255,5 +259,38 @@ export const team: Team<string>[] = [
     source: Default,
     identifier: "Vacant",
     position: "Vacant",
+  },
+];
+
+export type Projects<T> = {
+  image: T;
+  title: T;
+  description: T;
+  tags?: T[];
+};
+
+export const projects: Projects<string>[] = [
+  {
+    image: PGU,
+    title: "Project Global Universities",
+    description:
+      "CSIRT.global's Global Universities project aims to identify and mitigate cybersecurity vulnerabilities affecting universities worldwide. We work closely with talented cybersecurity students who contribute their skills through hands-on research and analysis. These students investigate exposed systems, analyze threats, and support responsible disclosure processes. The goal is to enhance digital resilience in the academic sector while nurturing the next generation of cybersecurity professionals.",
+  },
+  {
+    image: ICY,
+    title: "Project ICY",
+    description:
+      "An open-source survey application designed as an alternative solution for use by the Dutch Government.",
+    tags: [
+      "Programming Language: Dart",
+      "Framework: Flutter",
+      "Supported Platforms: Fully multi-platform, including mobile (iOS & Android), web, and desktop environments.",
+    ],
+  },
+  {
+    image: VLAM,
+    title: "vlam.ai",
+    description:
+      "Project vlam.ai (Veilige, Lokale AI Modellen – “Safe, Local AI Models”) is a Dutch government initiative by BZK, VRO, and SSC-ICT that delivers secure, locally hosted, and scalable AI solutions for the Dutch government, enabling private AI application deployment, confidential generative AI chat, and efficient AI-powered search across public-sector data.",
   },
 ];
