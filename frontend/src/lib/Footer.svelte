@@ -15,7 +15,7 @@
         border-purple-500 text-black dark:text-white"
     >
         <div class="col-span-12 lg:col-span-6">
-            <h3 class="font-semibold text-3xl py-8">About DIVD.works</h3>
+            <h3 class="font-medium text-3xl py-8">About DIVD.works</h3>
             <p class="text-gray-700 dark:text-gray-300 text-sm italic">
                 We connect young digital talent with employers to support skill
                 development and career-aligned internships or part-time roles.
@@ -44,7 +44,7 @@
             <a href="/conduct" class="underline list-item">Code of Conduct</a>
         </div>
         <div class="col-span-12 sm:col-span-6 lg:col-span-3 pt-8 text-sm">
-            <h3 class="font-semibold text-3xl pb-2">HQ Office</h3>
+            <h3 class="font-medium text-3xl pb-2">HQ Office</h3>
             <a
                 href="https://maps.app.goo.gl/ar5HyYmcWq8YeK7F7"
                 class="underline text-gray-700 dark:text-gray-300"
