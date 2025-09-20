@@ -9,6 +9,7 @@ import Dirk from "$lib/assets/team/dirk.jpeg";
 import Nigel from "$lib/assets/team/nigel.png";
 import Ahmed from "$lib/assets/team/ahmed.jpg";
 import Marcel from "$lib/assets/team/marcel.jpg";
+import Michel from "$lib/assets/team/michel.jpg";
 
 import PGU from "$lib/assets/projects/project-global-universities.png";
 import ICY from "$lib/assets/projects/project-icy.png";
@@ -45,7 +46,7 @@ export const navigation_routes: NavigationRoutes<string>[] = [
     item: "Careers",
   },
   {
-    url: "/",
+    url: "/faq",
     item: "FAQ",
   },
   {
@@ -256,9 +257,9 @@ export const team: Team<string>[] = [
     position: "COO",
   },
   {
-    source: Default,
-    identifier: "Vacant",
-    position: "Vacant",
+    source: Michel,
+    identifier: "Michel Verhagen",
+    position: "Chief Public Private Partnerships",
   },
 ];
 
@@ -292,5 +293,51 @@ export const projects: Projects<string>[] = [
     title: "vlam.ai",
     description:
       "Project vlam.ai (Veilige, Lokale AI Modellen – “Safe, Local AI Models”) is a Dutch government initiative by BZK, VRO, and SSC-ICT that delivers secure, locally hosted, and scalable AI solutions for the Dutch government, enabling private AI application deployment, confidential generative AI chat, and efficient AI-powered search across public-sector data.",
+  },
+];
+
+export interface FAQ<T> extends SEO<T> {}
+
+export const faq: FAQ<string>[] = [
+  {
+    title:
+      "What is DIVD.works, and how does it differ from traditional internship platforms?",
+    description:
+      "DIVD.works is a purpose-driven talent platform where students work on real-world digital challenges with social impact. Unlike traditional internship platforms, we guarantee each student a placement and focus on meaningful work, ethical digital innovation, and personal growth—not just filling vacancies.",
+  },
+  {
+    title: "How does DIVD.works guarantee internship placements for students?",
+    description:
+      "We design internships around the student, not the other way around. Every student who joins DIVD.works gets the chance to work on a real project—either one initiated by us or one they propose themselves—guided by experienced mentors from our community.",
+  },
+  {
+    title:
+      "Who can participate in DIVD.works—what types of students, talents, or backgrounds are welcome?",
+    description:
+      "We welcome curious and motivated students from all educational backgrounds, especially those with interest in cybersecurity, ethical hacking, design, software development, research, communication, or social impact. If you want to make a difference with your skills, you’re welcome here. ",
+  },
+  {
+    title:
+      "What kind of projects or learning opportunities does DIVD.works offer?",
+    description:
+      "Projects range from ethical hacking and vulnerability disclosure to building digital tools, public awareness campaigns, research, or the development d software that supports open-source and humanitarian efforts. All projects are connected to real-world problems and digital responsibility. ",
+  },
+  {
+    title:
+      "Can students propose their own project ideas, and how are those supported within the platform?",
+    description:
+      "Yes! Students are encouraged to propose their own ideas—whether it's a research topic, a digital product, or a social initiative. We help refine the concept, connect you with mentors, and create a structure that makes your idea a reality during your internship. ",
+  },
+  {
+    title:
+      "How does DIVD.works help students grow professionally and personally during their internship?",
+    description:
+      "We focus on real learning. That means building confidence, gaining hands-on experience, developing leadership skills, and working on things that matter. You’re not just an intern—you’re a contributor, and we support your growth every step of the way.",
+  },
+  {
+    title:
+      "What do companies or organizations gain by collaborating with DIVD.works?",
+    description:
+      "Organizations gain access to highly motivated, purpose-driven students who bring fresh ideas, real skills, and a strong sense of responsibility. It's an opportunity to co-create impactful solutions, contribute to social good, and engage with talent that values ethical and meaningful work. Many of these students go on to become valuable team members—making DIVD.works not just a project partner, but also a powerful recruitment channel for forward-thinking organizations.",
   },
 ];
