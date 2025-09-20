@@ -23,24 +23,32 @@
                 individuals from feeling discouraged.
             </p>
             <p class="pt-4 text-sm">
-                &copy; {copyright_year()} DIVD.works, Inc. All rights reserved.
+                &copy; {copyright_year()}
+                <a href="/" class="font-semibold">DIVD.works</a>, Inc. All
+                rights reserved.
             </p>
         </div>
         <div
             class="col-span-12 sm:col-span-6 lg:col-span-3 list-disc pt-8 text-base marker:text-purple-500 pl-4"
         >
-            <a href="/" class="underline list-item">About DIVD.works</a>
-            <a href="/" class="py-4 underline list-item"
-                >Working at DIVD.works</a
+            <a href="/about" class="underline list-item">About DIVD.works</a>
+            <a
+                href="https://theorg.com/org/divd-works"
+                class="py-4 underline list-item"
+                target="_blank">Working at DIVD.works</a
             >
-            <a href="/" class="underline list-item">Privacy Statement</a>
-            <a href="/" class="py-4 underline list-item">Terms & Conditions</a>
-            <a href="/" class="underline list-item">Cookies</a>
+            <a href="/privacy" class="underline list-item">Privacy Statement</a>
+            <a href="/tos" class="py-4 underline list-item"
+                >Terms & Conditions</a
+            >
+            <a href="/conduct" class="underline list-item">Code of Conduct</a>
         </div>
         <div class="col-span-12 sm:col-span-6 lg:col-span-3 pt-8 text-sm">
             <h3 class="font-semibold text-3xl pb-2">HQ Office</h3>
-            <a href="/" class="underline text-gray-700 dark:text-gray-300"
-                >Maanweg 174 2516 AB Den Haag</a
+            <a
+                href="https://maps.app.goo.gl/ar5HyYmcWq8YeK7F7"
+                class="underline text-gray-700 dark:text-gray-300"
+                target="_blank">Maanweg 174 2516 AB Den Haag</a
             >
             <p class="pt-2 text-purple-500">Tel: (+31) 70 41 90 309</p>
         </div>

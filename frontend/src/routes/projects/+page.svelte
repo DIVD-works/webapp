@@ -34,7 +34,7 @@
                         class="col-span-12 w-full grid grid-cols-12 gap-8 place-items-center border
                         border-black dark:border-white p-6 rounded-2xl"
                     >
-                        <a href="/" class="col-span-12 xl:col-span-4">
+                        <a href="/projects" class="col-span-12 xl:col-span-4">
                             <img src={image} alt={title} fetchpriority="high" />
                         </a>
 

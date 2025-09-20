@@ -24,9 +24,9 @@
                 />
             </div>
             <div class="w-full flex flex-col items-start">
-                <h2 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
+                <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
                     Workmethods
-                </h2>
+                </h1>
                 <p
                     class="text-gray-700 dark:text-gray-300 mt-8 mb-4 text-base sm:text-lg"
                 >
@@ -276,7 +276,7 @@
                     class="bg-purple-600 w-full sm:w-60 h-12 rounded-2xl cursor-pointer text-black dark:text-white
                     text-xl font-semibold hover:bg-purple-700 duration-200 ease-out
                     hover:ease-in"
-                    on:click={(): Promise<void> => goto("/")}
+                    on:click={(): Promise<void> => goto("/workmethods")}
                 >
                     {"Register now!".toUpperCase()}
                 </button>

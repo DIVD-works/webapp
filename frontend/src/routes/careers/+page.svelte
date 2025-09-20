@@ -33,9 +33,9 @@
                 />
             </div>
             <div class="w-full flex flex-col items-start">
-                <h2 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
+                <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
                     Careers
-                </h2>
+                </h1>
                 <p
                     class="text-gray-700 dark:text-gray-300 mt-8 text-base sm:text-lg"
                 >
@@ -66,7 +66,7 @@
                     These are the current job listings:
                 </p>
                 <a
-                    href="/"
+                    href="/careers"
                     class="text-gray-700 dark:text-gray-300 text-base sm:text-lg
                     whitespace-pre underline"
                 >

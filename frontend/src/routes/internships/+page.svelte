@@ -15,9 +15,9 @@
         <article
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col"
         >
-            <h2 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
+            <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
                 Internships
-            </h2>
+            </h1>
             <p
                 class="text-gray-700 dark:text-gray-300 mt-8 mb-4 text-base sm:text-lg"
             >

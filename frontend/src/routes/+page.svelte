@@ -44,7 +44,7 @@
                 <button
                     class="w-full h-16 rounded-2xl border-1 cursor-pointer hover:bg-gray-800 duration-200
                     ease-out hover:ease-in"
-                    on:click={(): Promise<void> => goto("/")}
+                    on:click={(): Promise<void> => goto("/internships")}
                 >
                     {"Internships".toUpperCase()}
                 </button>
@@ -78,7 +78,7 @@
             <button
                 class="bg-purple-600 w-full sm:w-50 h-12 rounded-2xl cursor-pointer text-black dark:text-white
                 text-xl font-semibold hover:bg-purple-700 duration-200 ease-out hover:ease-in"
-                on:click={(): Promise<void> => goto("/")}
+                on:click={(): Promise<void> => goto("/workmethods")}
             >
                 {"Learn more!".toUpperCase()}
             </button>
@@ -190,14 +190,15 @@
                     stories from students and companies? Then sign up for our
                     newsletter!
                 </p>
-                <button
+                <a
+                    href="https://newsroom.divd.works/"
                     class="bg-black dark:bg-white w-full sm:w-60 h-12 rounded-2xl cursor-pointer text-white
                     dark:text-black text-xl font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 duration-200 ease-out
-                    hover:ease-in"
-                    on:click={(): Promise<void> => goto("/")}
+                    hover:ease-in flex justify-center items-center"
+                    target="_blank"
                 >
                     {"To newsletter!".toUpperCase()}
-                </button>
+                </a>
             </div>
             <div
                 class="w-full h-full bg-gray-200 dark:bg-gray-800 flex flex-col items-center p-8 rounded-3xl
@@ -229,14 +230,15 @@
             >
                 Looking for opportunities?
             </h2>
-            <button
+            <a
+                href="https://discord.gg/uRTHZm9GgT"
                 class="bg-purple-600 w-full sm:w-60 h-12 rounded-2xl cursor-pointer text-black dark:text-white
                 text-xl font-semibold hover:bg-purple-700 duration-200 ease-out
-                hover:ease-in"
-                on:click={(): Promise<void> => goto("/")}
+                hover:ease-in flex justify-center items-center"
+                target="_blank"
             >
                 {"Ask on Discord!".toUpperCase()}
-            </button>
+            </a>
         </article>
     </section>
 </main>

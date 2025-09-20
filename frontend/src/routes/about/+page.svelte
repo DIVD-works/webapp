@@ -15,11 +15,11 @@
         <article
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
         >
-            <h2
+            <h1
                 class="text-purple-500 text-4xl sm:text-5xl md:text-6xl font-extrabold"
             >
                 About
-            </h2>
+            </h1>
             <p
                 class="text-gray-700 dark:text-gray-300 my-3 text-base sm:text-lg text-center"
             >
@@ -46,11 +46,11 @@
                                 class="w-56 xl:w-44 h-56 xl:h-44 mx-auto rounded-full mb-8 border-2 border-purple-500"
                             />
                         </figure>
-                        <h3
+                        <h2
                             class="text-black dark:text-white text-2xl sm:text-3xl font-semibold"
                         >
                             {identifier}
-                        </h3>
+                        </h2>
                         <p
                             class="text-gray-700 dark:text-gray-300 mt-2 mb-4 text-base sm:text-lg text-center
                             font-medium"
