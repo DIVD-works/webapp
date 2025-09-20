@@ -1,6 +1,4 @@
 # allow crawling everything by default, unless specified otherwise
 User-agent: *
 Allow: /
-Disallow: /login/
-Disallow: /register/
 Disallow: /404

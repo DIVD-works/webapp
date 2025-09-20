@@ -35,7 +35,7 @@
                     on:click={(): number =>
                         (faq_index = faq_index == index ? null : index)}
                 >
-                    <h2 class="text-purple-500 text-2xl font-extrabold">
+                    <h2 class="text-purple-500 text-2xl font-semibold">
                         {index + 1}. {faq_item.title}
                     </h2>
                     {#if faq_index == index}

@@ -41,7 +41,7 @@
         <article
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
         >
-            <h2 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
+            <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
                 Skill trajectory
             </h2>
             <div
@@ -57,7 +57,7 @@
                             duration-200 ease-out hover:ease-in"
                         />
                         <h3
-                            class="text-purple-500 text-3xl sm:text-4xl font-semibold my-3 text-center"
+                            class="text-purple-500 text-3xl sm:text-4xl font-medium my-3 text-center"
                         >
                             {card.title}
                         </h3>
@@ -77,9 +77,9 @@
         dark:bg-black"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col gap-8"
         >
-            <h2 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
+            <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
                 Benefits of joining
             </h2>
             <ol
@@ -105,14 +105,15 @@
                     Improve your English proficiency in a professional setting.
                 </li>
             </ol>
-            <button
+            <a
+                href="https://form.jotform.com/250672969917070"
                 class="bg-black dark:bg-white w-full sm:w-60 h-12 rounded-2xl cursor-pointer text-white
                 dark:text-black text-xl font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 duration-200
-                ease-out hover:ease-in"
-                on:click={(): Promise<void> => goto("/internships")}
+                ease-out hover:ease-in flex justify-center items-center"
+                target="_blank"
             >
                 {"Apply!".toUpperCase()}
-            </button>
+            </a>
         </article>
     </section>
 </main>

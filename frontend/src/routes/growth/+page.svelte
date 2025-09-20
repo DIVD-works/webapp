@@ -51,7 +51,7 @@
         <article
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center lg:items-start flex-col"
         >
-            <h2 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
+            <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
                 Sustainability
             </h2>
             <p
@@ -90,7 +90,7 @@
                 />
             </div>
             <div class="w-full flex flex-col items-center lg:items-start">
-                <h2 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
+                <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
                     Investors
                 </h2>
                 <p

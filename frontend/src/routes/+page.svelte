@@ -35,12 +35,14 @@
                 class="w-full flex flex-col sm:flex-row text-white gap-5 md:gap-10 text-xl sm:text-2xl
                 font-semibold"
             >
-                <button
-                    class="bg-purple-600 w-full h-16 rounded-2xl cursor-pointer"
-                    on:click={(): Promise<void> => goto("/")}
+                <a
+                    href="https://form.jotform.com/250672969917070"
+                    class="bg-purple-600 w-full h-16 rounded-2xl cursor-pointer flex justify-center
+                    items-center"
+                    target="_blank"
                 >
                     {"Apply now!".toUpperCase()}
-                </button>
+                </a>
                 <button
                     class="w-full h-16 rounded-2xl border-1 cursor-pointer hover:bg-gray-800 duration-200
                     ease-out hover:ease-in"
@@ -60,7 +62,7 @@
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
         >
             <h2
-                class="text-purple-500 text-4xl sm:text-5xl md:text-6xl font-extrabold"
+                class="text-purple-500 text-4xl sm:text-5xl md:text-6xl font-semibold"
             >
                 Our Definement
             </h2>
@@ -93,7 +95,7 @@
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
         >
             <h2
-                class="text-black dark:text-white text-4xl sm:text-5xl md:text-6xl font-extrabold"
+                class="text-black dark:text-white text-4xl sm:text-5xl md:text-6xl font-semibold"
             >
                 Why choose us?
             </h2>
@@ -105,7 +107,7 @@
                         class="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 place-items-center"
                     >
                         <h3
-                            class="text-purple-500 text-3xl sm:text-4xl font-semibold"
+                            class="text-purple-500 text-3xl sm:text-4xl font-medium"
                         >
                             {card.title}
                         </h3>
@@ -142,7 +144,7 @@
             </div>
             <div class="w-full flex flex-col items-center md:items-start">
                 <h2
-                    class="text-black dark:text-white text-5xl md:text-6xl font-extrabold"
+                    class="text-black dark:text-white text-5xl md:text-6xl font-semibold"
                 >
                     Technlogy
                 </h2>
@@ -179,7 +181,7 @@
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col md:flex-row gap-8 md:gap-12"
         >
             <div class="w-full flex flex-col items-center md:items-start">
-                <h2 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
+                <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
                     Newsletter
                 </h2>
                 <p
@@ -206,7 +208,7 @@
             >
                 <article>
                     <h3
-                        class="text-black dark:text-white text-3xl sm:text-4xl font-semibold mb-8"
+                        class="text-black dark:text-white text-3xl sm:text-4xl font-medium mb-8"
                     >
                         DIVD.works
                     </h3>
@@ -226,7 +228,7 @@
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
         >
             <h2
-                class="text-black dark:text-white text-3xl sm:text-5xl md:text-5xl font-extrabold"
+                class="text-black dark:text-white text-3xl sm:text-5xl md:text-5xl font-semibold"
             >
                 Looking for opportunities?
             </h2>

@@ -29,18 +29,22 @@
                 things and what makes us stand out.
             </p>
             <div class="w-full grid grid-cols-12 gap-8">
-                {#each projects as { image, title, description, tags }, _}
+                {#each projects as { location, image, title, description, tags }, _}
                     <article
                         class="col-span-12 w-full grid grid-cols-12 gap-8 place-items-center border
                         border-black dark:border-white p-6 rounded-2xl"
                     >
-                        <a href="/projects" class="col-span-12 xl:col-span-4">
+                        <a
+                            href={location}
+                            class="col-span-12 xl:col-span-4"
+                            target="_blank"
+                        >
                             <img src={image} alt={title} fetchpriority="high" />
                         </a>
 
                         <div class="col-span-12 xl:col-span-8">
                             <h2
-                                class="text-purple-500 text-3xl md:text-4xl font-extrabold"
+                                class="text-purple-500 text-3xl md:text-4xl font-semibold"
                             >
                                 {title}
                             </h2>
