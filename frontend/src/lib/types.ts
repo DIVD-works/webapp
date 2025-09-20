@@ -17,7 +17,7 @@ export const navigation_routes: NavigationRoutes<string>[] = [
     item: "About",
   },
   {
-    url: "/",
+    url: "/workmethods",
     item: "Workmethods",
   },
   {
