@@ -14,15 +14,13 @@
         class="w-full flex justify-start md:justify-center px-3 lg:px-0 pt-10 bg-white dark:bg-black"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start md:items-center flex-col gap-8"
         >
-            <h1
-                class="text-purple-500 text-4xl sm:text-5xl md:text-6xl font-extrabold"
-            >
+            <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
                 FAQ
             </h1>
             <p
-                class="text-gray-700 dark:text-gray-300 my-3 text-base sm:text-lg text-center"
+                class="text-gray-700 dark:text-gray-300 my-3 text-base sm:text-lg text-left md:text-center"
             >
                 There is a lot of information to navigate through, so that's why
                 we have put together a list of Frequent Asked Questions (FAQ).
@@ -35,7 +33,9 @@
                     on:click={(): number =>
                         (faq_index = faq_index == index ? null : index)}
                 >
-                    <h2 class="text-purple-500 text-2xl font-semibold">
+                    <h2
+                        class="text-purple-500 text-xl sm:text-2xl md:text-3xl font-semibold"
+                    >
                         {index + 1}. {faq_item.title}
                     </h2>
                     {#if faq_index == index}

@@ -13,7 +13,7 @@
         class="w-full flex justify-start md:justify-center px-3 lg:px-0 py-10 bg-white dark:bg-black"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start md:items-center flex-col"
         >
             <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
                 Internships
@@ -41,7 +41,7 @@
         <article
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
         >
-            <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
+            <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
                 Skill trajectory
             </h2>
             <div
@@ -79,7 +79,7 @@
         <article
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col gap-8"
         >
-            <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
+            <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
                 Benefits of joining
             </h2>
             <ol

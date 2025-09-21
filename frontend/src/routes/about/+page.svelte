@@ -13,15 +13,13 @@
         class="w-full flex justify-start md:justify-center px-3 lg:px-0 pt-10 bg-white dark:bg-black"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start md:items-center flex-col gap-8"
         >
-            <h1
-                class="text-purple-500 text-4xl sm:text-5xl md:text-6xl font-extrabold"
-            >
+            <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
                 About
             </h1>
             <p
-                class="text-gray-700 dark:text-gray-300 my-3 text-base sm:text-lg text-center"
+                class="text-gray-700 dark:text-gray-300 my-3 text-base sm:text-lg text-left md:text-center"
             >
                 At DIVD.works, we have a team of dedicated professionals who are
                 passionate about what they do. Our team members bring a wealth

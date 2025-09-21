@@ -17,7 +17,8 @@
         background-size: cover; z-index: 1;"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8 md:gap-20"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-4 sm:gap-8
+            md:gap-20"
         >
             <h1
                 class="text-purple-500 text-3xl sm:text-5xl md:text-6xl font-extrabold"
@@ -63,11 +64,9 @@
         dark:bg-black"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col gap-8"
         >
-            <h2
-                class="text-purple-500 text-4xl sm:text-5xl md:text-6xl font-semibold"
-            >
+            <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
                 Our Definement
             </h2>
             <p class="text-gray-700 dark:text-gray-300 text-base sm:text-lg">
@@ -82,8 +81,9 @@
                 click the button below for more information about how work.
             </p>
             <button
-                class="bg-purple-600 w-full sm:w-50 h-12 rounded-2xl cursor-pointer text-black dark:text-white
-                text-xl font-semibold hover:bg-purple-700 duration-200 ease-out hover:ease-in"
+                class="bg-purple-600 w-full sm:w-50 h-12 rounded-2xl cursor-pointer text-black
+                dark:text-white text-xl font-semibold hover:bg-purple-700 duration-200 ease-out
+                hover:ease-in"
                 on:click={(): Promise<void> => goto("/workmethods")}
             >
                 {"Learn more!".toUpperCase()}
@@ -99,7 +99,7 @@
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
         >
             <h2
-                class="text-black dark:text-white text-4xl sm:text-5xl md:text-6xl font-semibold"
+                class="text-black dark:text-white text-4xl md:text-5xl font-semibold"
             >
                 Why choose us?
             </h2>
@@ -122,8 +122,8 @@
                         </p>
                         <Icon
                             icon={card.icon}
-                            class="w-14 sm:w-16 h-14 sm:h-16 text-black dark:text-white scale-100 hover:scale-110
-                            duration-200 ease-out hover:ease-in"
+                            class="w-14 sm:w-16 h-14 sm:h-16 text-black dark:text-white scale-100
+                            hover:scale-110 duration-200 ease-out hover:ease-in"
                         />
                     </article>
                 {/each}
@@ -146,14 +146,14 @@
                     fetchpriority="high"
                 />
             </div>
-            <div class="w-full flex flex-col items-center md:items-start">
+            <div class="w-full flex flex-col items-start">
                 <h2
-                    class="text-black dark:text-white text-5xl md:text-6xl font-semibold"
+                    class="text-black dark:text-white text-4xl md:text-5xl font-semibold"
                 >
                     Technlogy
                 </h2>
                 <p
-                    class="text-gray-700 dark:text-gray-300 my-8 text-base sm:text-lg text-center md:text-left"
+                    class="text-gray-700 dark:text-gray-300 my-8 text-base sm:text-lg"
                 >
                     We use the latest technologies and tools with we experience
                     in. To stay up to date with the latest trends and really be
@@ -162,14 +162,14 @@
                     things.
                 </p>
                 <article
-                    class="w-full grid grid-cols-4 sm:grid-cols-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4
-                    sm:gap-6"
+                    class="w-full grid grid-cols-4 sm:grid-cols-6 md:grid-cols-3 lg:grid-cols-4
+                    xl:grid-cols-5 gap-4 sm:gap-6"
                 >
                     {#each technology_icons as stack}
                         <Icon
                             icon={stack.icon}
-                            class="{stack.style} w-16 sm:w-20 h-16 sm:h-20 bg-gray-200 dark:bg-gray-800 rounded-xl p-2 scale-100
-                            hover:scale-110 duration-200 ease-out hover:ease-in"
+                            class="{stack.style} w-16 sm:w-20 h-16 sm:h-20 bg-gray-200 dark:bg-gray-800
+                            rounded-xl p-2 scale-100hover:scale-110 duration-200 ease-out hover:ease-in"
                         />
                     {/each}
                 </article>
@@ -182,14 +182,15 @@
         dark:bg-slate-950"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col md:flex-row gap-8 md:gap-12"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start flex-col md:flex-row gap-8
+            md:gap-12"
         >
-            <div class="w-full flex flex-col items-center md:items-start">
-                <h2 class="text-purple-500 text-5xl md:text-6xl font-semibold">
+            <div class="w-full flex flex-col items-start">
+                <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
                     Newsletter
                 </h2>
                 <p
-                    class="text-gray-700 dark:text-gray-300 my-8 text-lg sm:text-xl text-center md:text-left"
+                    class="text-gray-700 dark:text-gray-300 my-8 text-lg sm:text-xl"
                 >
                     Welcome to the DIVD.works newsletter! Do you want to stay up
                     to date of the latest updates, new projects, inspiring
@@ -199,8 +200,8 @@
                 <a
                     href="https://newsroom.divd.works/"
                     class="bg-black dark:bg-white w-full sm:w-60 h-12 rounded-2xl cursor-pointer text-white
-                    dark:text-black text-xl font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 duration-200 ease-out
-                    hover:ease-in flex justify-center items-center"
+                    dark:text-black text-xl font-semibold hover:bg-gray-800 dark:hover:bg-gray-200
+                    duration-200 ease-out hover:ease-in flex justify-center items-center"
                     target="_blank"
                 >
                     {"To newsletter!".toUpperCase()}
@@ -232,14 +233,14 @@
             class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
         >
             <h2
-                class="text-black dark:text-white text-3xl sm:text-5xl md:text-5xl font-semibold"
+                class="text-black dark:text-white text-4xl md:text-5xl font-semibold"
             >
                 Looking for opportunities?
             </h2>
             <a
                 href="https://discord.gg/uRTHZm9GgT"
-                class="bg-purple-600 w-full sm:w-60 h-12 rounded-2xl cursor-pointer text-black dark:text-white
-                text-xl font-semibold hover:bg-purple-700 duration-200 ease-out
+                class="bg-purple-600 w-full sm:w-60 h-12 rounded-2xl cursor-pointer text-black
+                dark:text-white text-xl font-semibold hover:bg-purple-700 duration-200 ease-out
                 hover:ease-in flex justify-center items-center"
                 target="_blank"
             >

@@ -61,7 +61,7 @@
                     >
                         {#each condition.tags as tag}
                             <li class="marker:text-purple-500 pb-2">
-                                {tag}
+                                {tag || "No tag provided."}
                             </li>
                         {/each}
                     </ol>

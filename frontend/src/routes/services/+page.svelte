@@ -18,7 +18,7 @@
                 Services
             </h1>
             <div
-                class="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6"
+                class="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 my-4"
             >
                 {#each service_cards as card}
                     <article
@@ -30,7 +30,7 @@
                             duration-200 ease-out hover:ease-in"
                         />
                         <h2
-                            class="text-purple-500 text-3xl sm:text-4xl font-semibold my-3 text-center"
+                            class="text-purple-500 text-4xl sm:text-3xl font-semibold my-3 text-center"
                         >
                             {card.title}
                         </h2>

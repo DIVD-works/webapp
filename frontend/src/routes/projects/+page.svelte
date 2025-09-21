@@ -11,15 +11,13 @@
         class="w-full flex justify-start md:justify-center px-3 lg:px-0 pt-10 bg-white dark:bg-black"
     >
         <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
+            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start md:items-center flex-col gap-8"
         >
-            <h1
-                class="text-purple-500 text-4xl sm:text-5xl md:text-6xl font-extrabold"
-            >
+            <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
                 Projects
             </h1>
             <p
-                class="text-gray-700 dark:text-gray-300 my-3 text-base sm:text-lg text-center"
+                class="text-gray-700 dark:text-gray-300 my-3 text-base sm:text-lg text-left md:text-center"
             >
                 At DIVD.works, we build projects that help us learn and grow
                 with the open to work principle. We believe in sharing our work
@@ -31,7 +29,7 @@
             <div class="w-full grid grid-cols-12 gap-8">
                 {#each projects as { location, image, title, description, tags }, _}
                     <article
-                        class="col-span-12 w-full grid grid-cols-12 gap-8 place-items-center border
+                        class="col-span-12 w-full grid grid-cols-12 gap-4 sm:gap-8 place-items-center border
                         border-black dark:border-white p-6 rounded-2xl"
                     >
                         <a
@@ -44,7 +42,8 @@
 
                         <div class="col-span-12 xl:col-span-8">
                             <h2
-                                class="text-purple-500 text-3xl md:text-4xl font-semibold"
+                                class="text-purple-500 text-3xl md:text-4xl font-semibold text-center
+                                xl:text-left"
                             >
                                 {title}
                             </h2>
