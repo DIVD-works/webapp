@@ -2,10 +2,86 @@
     import { goto } from "$app/navigation";
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
-    import { home_cards, technology_icons } from "$lib/types";
     import Icon from "@iconify/svelte";
     import PoweredByPurpose from "$lib/assets/powered-by-purpose.png";
     import Banner from "$lib/assets/banner.jpg";
+    import type { Cards, TechnologyIcons } from "$lib/types";
+
+    const home_cards: Cards<string>[] = [
+        {
+            title: "Students",
+            description: "Students gain Real-World experience",
+            icon: "mdi:account-student",
+        },
+        {
+            title: "Companies",
+            description: "Companies discover motivated talent",
+            icon: "mdi:company",
+        },
+        {
+            title: "Education",
+            description: "Education prepares students for the future",
+            icon: "mdi:education-outline",
+        },
+        {
+            title: "Communities",
+            description: "Communities connect, collaborate and innovate",
+            icon: "mdi:connect-without-contact",
+        },
+        {
+            title: "Workset",
+            description: "Workset empowers mentorship and growth",
+            icon: "mdi:computer",
+        },
+        {
+            title: "Freedom",
+            description: "Freedom embarks a journey of lifelong learning",
+            icon: "mdi:bird",
+        },
+    ];
+
+    const technology_icons: TechnologyIcons<string>[] = [
+        {
+            icon: "tabler:brand-svelte",
+            style: "text-orange-600",
+        },
+        {
+            icon: "mdi:language-typescript",
+            style: "text-blue-500",
+        },
+        {
+            icon: "mdi:tailwind",
+            style: "text-sky-400",
+        },
+        {
+            icon: "mdi:language-rust",
+            style: "text-orange-500",
+        },
+        {
+            icon: "mdi:database",
+            style: "text-yellow-400",
+        },
+        {
+            icon: "mdi:language-python",
+            style: "text-green-500",
+        },
+        {
+            icon: "tabler:brand-flutter",
+            style: "text-blue-300",
+        },
+        {
+            icon: "mdi:github",
+            style: "text-black dark:text-white",
+        },
+        {
+            icon: "mdi:linux",
+            style: "text-black dark:text-white",
+        },
+        {
+            icon: "mdi:google",
+            style: "text-red-500",
+        },
+    ];
 </script>
 
 <Header />
@@ -106,22 +182,22 @@
             <div
                 class="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6"
             >
-                {#each home_cards as card}
+                {#each home_cards as { title, description, icon }, _}
                     <article
                         class="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 place-items-center"
                     >
                         <h3
                             class="text-purple-500 text-3xl sm:text-4xl font-medium"
                         >
-                            {card.title}
+                            {title}
                         </h3>
                         <p
                             class="text-gray-700 dark:text-gray-300 my-3 text-base sm:text-lg text-center"
                         >
-                            {card.slogan}
+                            {description}
                         </p>
                         <Icon
-                            icon={card.icon}
+                            {icon}
                             class="w-14 sm:w-16 h-14 sm:h-16 text-black dark:text-white scale-100
                             hover:scale-110 duration-200 ease-out hover:ease-in"
                         />
@@ -165,11 +241,11 @@
                     class="w-full grid grid-cols-4 sm:grid-cols-6 md:grid-cols-3 lg:grid-cols-4
                     xl:grid-cols-5 gap-4 sm:gap-6"
                 >
-                    {#each technology_icons as stack}
+                    {#each technology_icons as { icon, style }, _}
                         <Icon
-                            icon={stack.icon}
-                            class="{stack.style} w-16 sm:w-20 h-16 sm:h-20 bg-gray-200 dark:bg-gray-800
-                            rounded-xl p-2 scale-100hover:scale-110 duration-200 ease-out hover:ease-in"
+                            {icon}
+                            class="{style} w-16 sm:w-20 h-16 sm:h-20 bg-gray-200 dark:bg-gray-800
+                            rounded-xl p-2 scale-100 hover:scale-110 duration-200 ease-out hover:ease-in"
                         />
                     {/each}
                 </article>

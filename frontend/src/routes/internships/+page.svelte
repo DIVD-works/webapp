@@ -1,9 +1,29 @@
 <script lang="ts">
-    import { goto } from "$app/navigation";
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
-    import { internship_cards } from "$lib/types";
     import Icon from "@iconify/svelte";
+    import type { Cards } from "$lib/types";
+
+    const internship_cards: Cards<string>[] = [
+        {
+            title: "Skill Development",
+            description:
+                "Engage in hands-on projects that enhance both technical and soft skills crucial for the global digital landscape.",
+            icon: "mdi:tool-clock",
+        },
+        {
+            title: "International Exposure",
+            description:
+                "Collaborate with peers from around the world, gaining insights into diverse cultures and global practices.",
+            icon: "mdi:globe",
+        },
+        {
+            title: "Career Advancement",
+            description:
+                "Build a robust foundation that prepares you for opportunities in international organizations and the broader digital economy.",
+            icon: "mdi:stairs-up",
+        },
+    ];
 </script>
 
 <Header />
@@ -47,24 +67,24 @@
             <div
                 class="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6"
             >
-                {#each internship_cards as card}
+                {#each internship_cards as { title, description, icon }, _}
                     <article
                         class="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 place-items-center"
                     >
                         <Icon
-                            icon={card.icon}
+                            {icon}
                             class="w-20 sm:w-24 h-20 sm:h-24 text-black dark:text-white scale-100 hover:scale-110
                             duration-200 ease-out hover:ease-in"
                         />
                         <h3
                             class="text-purple-500 text-3xl sm:text-4xl font-medium my-3 text-center"
                         >
-                            {card.title}
+                            {title}
                         </h3>
                         <p
                             class="text-gray-700 dark:text-gray-300 text-base sm:text-lg text-center"
                         >
-                            {card.slogan}
+                            {description}
                         </p>
                     </article>
                 {/each}
