@@ -15,3 +15,39 @@ button {
 html {
     @apply scroll-smooth;
 }
+
+.section {
+    @apply w-full flex justify-start md:justify-center px-3 lg:px-0 py-5 lg:py-10;
+}
+
+.bgdefault {
+    @apply bg-white dark:bg-black;
+}
+
+.bgcolor {
+    @apply bg-slate-100 dark:bg-slate-900;
+}
+
+.article {
+    @apply w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8;
+}
+
+.h1 {
+    @apply text-purple-500 text-5xl md:text-6xl font-extrabold;
+}
+
+.h2 {
+    @apply text-purple-500 text-4xl md:text-5xl font-semibold;
+}
+
+.h3 {
+    @apply text-purple-500 text-3xl sm:text-4xl font-medium;
+}
+
+.p {
+    @apply text-gray-700 dark:text-gray-300 text-base sm:text-lg;
+}
+
+.ctabutton {
+    @apply w-full sm:w-60 h-12 rounded-2xl cursor-pointer text-white dark:text-black text-xl font-semibold hover:bg-gray-800 dark:hover:bg-gray-200 duration-200 ease-out hover:ease-in flex justify-center items-center;
+}
