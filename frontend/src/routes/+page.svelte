@@ -5,83 +5,7 @@
     import Icon from "@iconify/svelte";
     import PoweredByPurpose from "$lib/assets/powered-by-purpose.png";
     import Banner from "$lib/assets/banner.jpg";
-    import type { Cards, TechnologyIcons } from "$lib/types";
-
-    const home_cards: Cards<string>[] = [
-        {
-            title: "Students",
-            description: "Students gain Real-World experience",
-            icon: "mdi:account-student",
-        },
-        {
-            title: "Companies",
-            description: "Companies discover motivated talent",
-            icon: "mdi:company",
-        },
-        {
-            title: "Education",
-            description: "Education prepares students for the future",
-            icon: "mdi:education-outline",
-        },
-        {
-            title: "Communities",
-            description: "Communities connect, collaborate and innovate",
-            icon: "mdi:connect-without-contact",
-        },
-        {
-            title: "Workset",
-            description: "Workset empowers mentorship and growth",
-            icon: "mdi:computer",
-        },
-        {
-            title: "Freedom",
-            description: "Freedom embarks a journey of lifelong learning",
-            icon: "mdi:bird",
-        },
-    ];
-
-    const technology_icons: TechnologyIcons<string>[] = [
-        {
-            icon: "tabler:brand-svelte",
-            style: "text-orange-600",
-        },
-        {
-            icon: "mdi:language-typescript",
-            style: "text-blue-500",
-        },
-        {
-            icon: "mdi:tailwind",
-            style: "text-sky-400",
-        },
-        {
-            icon: "mdi:language-rust",
-            style: "text-orange-500",
-        },
-        {
-            icon: "mdi:database",
-            style: "text-yellow-400",
-        },
-        {
-            icon: "mdi:language-python",
-            style: "text-green-500",
-        },
-        {
-            icon: "tabler:brand-flutter",
-            style: "text-blue-300",
-        },
-        {
-            icon: "mdi:github",
-            style: "text-black dark:text-white",
-        },
-        {
-            icon: "mdi:linux",
-            style: "text-black dark:text-white",
-        },
-        {
-            icon: "mdi:google",
-            style: "text-red-500",
-        },
-    ];
+    import { page } from "$app/state";
 </script>
 
 <Header />
@@ -154,16 +78,12 @@
             <div
                 class="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6"
             >
-                {#each home_cards as { title, description, icon }, _}
+                {#each page.data.homecards as { title, description, icon }}
                     <article
-                        class="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 place-items-center"
+                        class="bg-gray-200 dark:bg-gray-800 rounded-xl p-6 place-items-center text-center"
                     >
-                        <h3 class="h3 text-center">
-                            {title}
-                        </h3>
-                        <p class="p my-3 text-center">
-                            {description}
-                        </p>
+                        <h3 class="h3">{title}</h3>
+                        <p class="p my-3">{description}</p>
                         <div class="w-full flex justify-center">
                             <Icon
                                 {icon}
@@ -199,7 +119,7 @@
                     class="w-full grid grid-cols-4 sm:grid-cols-6 md:grid-cols-3 lg:grid-cols-4
                     xl:grid-cols-5 gap-4 sm:gap-6"
                 >
-                    {#each technology_icons as { icon, style }, _}
+                    {#each page.data.technologyicons as { icon, style }}
                         <Icon
                             {icon}
                             class="{style} w-16 sm:w-20 h-16 sm:h-20 bg-gray-200 dark:bg-gray-800
@@ -230,14 +150,12 @@
             </div>
             <div
                 class="w-full h-full bg-gray-200 dark:bg-gray-800 flex flex-col items-center p-8 rounded-3xl
-                border border-purple-500"
+                border border-purple-500 !text-black dark:!text-white"
             >
                 <article>
-                    <h3 class="!text-black dark:!text-white h3 mb-8">
-                        DIVD.works
-                    </h3>
+                    <h3 class="h3 mb-8">DIVD.works</h3>
                     {#each { length: 8 }}
-                        <hr class="text-black dark:text-white h-6" />
+                        <hr class="h-6" />
                     {/each}
                 </article>
             </div>

@@ -1,7 +1,7 @@
 <script lang="ts">
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
-    import Sustainability from "$lib/assets/growth/sustainability.jpg";
+    import Growth from "$lib/assets/growth/growth.jpg";
     import Investors from "$lib/assets/growth/investors.jpg";
 </script>
 
@@ -24,11 +24,7 @@
                 </p>
             </div>
             <div class="image-effect">
-                <img
-                    src={Sustainability}
-                    alt="Sustainability"
-                    fetchpriority="high"
-                />
+                <img src={Growth} alt="Growth" fetchpriority="high" />
             </div>
         </article>
     </section>

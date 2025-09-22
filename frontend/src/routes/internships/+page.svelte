@@ -1,30 +1,8 @@
 <script lang="ts">
+    import { page } from "$app/state";
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
     import Icon from "@iconify/svelte";
-
-    import type { Cards } from "$lib/types";
-
-    const internship_cards: Cards<string>[] = [
-        {
-            title: "Skill Development",
-            description:
-                "Engage in hands-on projects that enhance both technical and soft skills crucial for the global digital landscape.",
-            icon: "mdi:tool-clock",
-        },
-        {
-            title: "International Exposure",
-            description:
-                "Collaborate with peers from around the world, gaining insights into diverse cultures and global practices.",
-            icon: "mdi:globe",
-        },
-        {
-            title: "Career Advancement",
-            description:
-                "Build a robust foundation that prepares you for opportunities in international organizations and the broader digital economy.",
-            icon: "mdi:stairs-up",
-        },
-    ];
 </script>
 
 <Header />
@@ -50,17 +28,13 @@
         <article class="article">
             <h2 class="h2">Skill trajectory</h2>
             <div class="card">
-                {#each internship_cards as { title, description, icon }, _}
-                    <article class="card-item">
+                {#each page.data.internshipcards as { title, description, icon }}
+                    <article class="card-item text-center">
                         <div class="w-full flex justify-center">
                             <Icon {icon} class="icon-medium card-icon" />
                         </div>
-                        <h3 class="h3 my-3 text-center">
-                            {title}
-                        </h3>
-                        <p class="p text-center">
-                            {description}
-                        </p>
+                        <h3 class="h3 my-3">{title}</h3>
+                        <p class="p">{description}</p>
                     </article>
                 {/each}
             </div>

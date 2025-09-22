@@ -4,7 +4,7 @@
     import Header from "$lib/Header.svelte";
 
     import Workmethods from "$lib/assets/workmethods/workmethods.jpg";
-    import ConnectingAmbition from "$lib/assets/workmethods/connecting-ambition.webp";
+    import Ambition from "$lib/assets/workmethods/ambition.webp";
     import WhatCanYouDo from "$lib/assets/workmethods/what-can-you-do.png";
     import JoinUs from "$lib/assets/workmethods/join-us.png";
 </script>
@@ -81,11 +81,7 @@
                 </p>
             </div>
             <div class="image-effect">
-                <img
-                    src={ConnectingAmbition}
-                    alt="Connecting Ambition"
-                    fetchpriority="high"
-                />
+                <img src={Ambition} alt="Ambition" fetchpriority="high" />
             </div>
         </article>
     </section>
@@ -144,11 +140,7 @@
                 </ol>
             </div>
             <div class="image-effect">
-                <img
-                    src={WhatCanYouDo}
-                    alt="What can you do"
-                    fetchpriority="high"
-                />
+                <img src={WhatCanYouDo} alt="What can you do" />
             </div>
         </article>
     </section>
@@ -168,12 +160,7 @@
     <section class="section !p-0 !pt-5 lg:!pt-10 bgdefault">
         <article class="article lg:!flex-row">
             <div class="image-effect">
-                <img
-                    src={JoinUs}
-                    alt="Join us"
-                    class="hue-rotate-230"
-                    fetchpriority="high"
-                />
+                <img src={JoinUs} alt="Join us" class="hue-rotate-230" />
             </div>
             <div class="w-full flex flex-col items-start">
                 <h2 class="!text-black dark:!text-white h2">Join us</h2>
