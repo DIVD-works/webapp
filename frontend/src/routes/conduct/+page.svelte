@@ -1,6 +1,7 @@
 <script lang="ts">
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
+
     import type { Conduct } from "$lib/types";
 
     const conduct: Conduct<string>[] = [
@@ -44,19 +45,10 @@
 
 <Header />
 <main>
-    <!-- Conduct section -->
-    <section
-        class="w-full flex justify-start md:justify-center px-3 lg:px-0 py-10 bg-slate-50 dark:bg-slate-950"
-    >
-        <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
-        >
-            <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
-                Conduct
-            </h1>
-            <p
-                class="text-gray-700 dark:text-gray-300 text-base sm:text-lg mb-4"
-            >
+    <section class="section bgcolor">
+        <article class="article">
+            <h1 class="h1">Conduct</h1>
+            <p class="p mb-4">
                 A Code of Conduct sets clear expectations for employee behavior,
                 fostering a respectful, ethical, and professional workplace. It
                 ensures accountability, protects confidential information,
@@ -65,7 +57,7 @@
                 contribute to a positive and productive work environment that
                 upholds the values and integrity of the organization.
             </p>
-            <p class="text-gray-700 dark:text-gray-300 text-base sm:text-lg">
+            <p class="p">
                 The <a
                     href="https://github.com/DIVD-works"
                     target="_blank"
@@ -86,26 +78,15 @@
             </p>
         </article>
     </section>
-    <!-- Rules section -->
-    <section
-        class="w-full flex justify-start md:justify-center px-3 lg:px-0 pt-10 bg-white dark:bg-black"
-    >
-        <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-center flex-col gap-8"
-        >
-            <h2 class="text-purple-500 text-4xl md:text-5xl font-semibold">
-                Rules
-            </h2>
+    <section class="section !p-0 !pt-5 lg:!pt-10 bgdefault">
+        <article class="article">
+            <h2 class="h2">Rules</h2>
             <div class="w-full flex flex-col gap-6">
                 {#each conduct as { title, description }, index}
-                    <h3
-                        class="text-purple-500 text-3xl md:text-4xl font-medium"
-                    >
+                    <h3 class="h3">
                         0{index + 1}. {title}
                     </h3>
-                    <p
-                        class="text-gray-700 dark:text-gray-300 text-sm sm:text-base"
-                    >
+                    <p class="p !text-sm sm:!text-base">
                         {description || "No description provided."}
                     </p>
                 {/each}

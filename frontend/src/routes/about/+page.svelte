@@ -1,6 +1,7 @@
 <script lang="ts">
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
+
     import type { Team } from "$lib/types";
 
     import Victor from "$lib/assets/team/victor.jpg";
@@ -17,7 +18,6 @@
     import Michel from "$lib/assets/team/michel.jpg";
 
     const draggable: boolean = false;
-
     const team: Team<string>[] = [
         {
             source: Victor,
@@ -84,19 +84,10 @@
 
 <Header />
 <main>
-    <!-- About section -->
-    <section
-        class="w-full flex justify-start md:justify-center px-3 lg:px-0 pt-10 bg-white dark:bg-black"
-    >
-        <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start md:items-center flex-col gap-8"
-        >
-            <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
-                About
-            </h1>
-            <p
-                class="text-gray-700 dark:text-gray-300 my-3 text-base sm:text-lg text-left md:text-center"
-            >
+    <section class="section !p-0 !pt-5 lg:!pt-10 bgdefault">
+        <article class="article !items-start md:!items-center">
+            <h1 class="h1">About</h1>
+            <p class="p my-3 text-left md:text-center">
                 At DIVD.works, we have a team of dedicated professionals who are
                 passionate about what they do. Our team members bring a wealth
                 of experience and expertise to the table, ensuring that we
@@ -125,10 +116,7 @@
                         >
                             {title}
                         </h2>
-                        <p
-                            class="text-gray-700 dark:text-gray-300 mt-2 mb-4 text-base sm:text-lg text-center
-                            font-medium"
-                        >
+                        <p class="p my-3 text-center font-medium">
                             {description}
                         </p>
                         <li

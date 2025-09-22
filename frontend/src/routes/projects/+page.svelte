@@ -1,8 +1,8 @@
 <script lang="ts">
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
-    import type { Projects } from "$lib/types";
 
+    import type { Projects } from "$lib/types";
     import PGU from "$lib/assets/projects/project-global-universities.png";
     import ICY from "$lib/assets/projects/project-icy.png";
     import VLAM from "$lib/assets/projects/vlamai.png";
@@ -40,19 +40,10 @@
 
 <Header />
 <main>
-    <!-- Projects section -->
-    <section
-        class="w-full flex justify-start md:justify-center px-3 lg:px-0 pt-10 bg-white dark:bg-black"
-    >
-        <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start md:items-center flex-col gap-8"
-        >
-            <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
-                Projects
-            </h1>
-            <p
-                class="text-gray-700 dark:text-gray-300 my-3 text-base sm:text-lg text-left md:text-center"
-            >
+    <section class="section !p-0 !pt-5 lg:!pt-10 bgdefault">
+        <article class="article !items-start md:!items-center">
+            <h1 class="h1">Projects</h1>
+            <p class="p my-3 text-left md:text-center">
                 At DIVD.works, we build projects that help us learn and grow
                 with the open to work principle. We believe in sharing our work
                 to the outside world and learning from others. Open source
@@ -62,10 +53,7 @@
             </p>
             <div class="w-full grid grid-cols-12 gap-8">
                 {#each projects as { location, image, title, description, tags }, _}
-                    <article
-                        class="col-span-12 w-full grid grid-cols-12 gap-4 sm:gap-8 place-items-center border
-                        sm:border-black dark:sm:border-white p-0 sm:p-6 rounded-2xl"
-                    >
+                    <article class="projects">
                         <a
                             href={location}
                             class="col-span-12 xl:col-span-4"
@@ -73,22 +61,14 @@
                         >
                             <img src={image} alt={title} fetchpriority="high" />
                         </a>
-
                         <div class="col-span-12 xl:col-span-8">
-                            <h2
-                                class="text-purple-500 text-3xl md:text-4xl font-semibold"
-                            >
+                            <h2 class="h2 !text-3xl md:!text-4xl">
                                 {title}
                             </h2>
-                            <p
-                                class="text-gray-700 dark:text-gray-300 mt-8 mb-4 text-base sm:text-lg"
-                            >
+                            <p class="p mt-8 mb-4">
                                 {description}
                             </p>
-                            <ol
-                                class="text-gray-700 dark:text-gray-300 text-base sm:text-lg pl-4"
-                                style="list-style-type:square"
-                            >
+                            <ol class="p pl-4" style="list-style-type:square">
                                 {#each tags as tag}
                                     <li class="marker:text-purple-500">
                                         {tag}

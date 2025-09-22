@@ -2,10 +2,10 @@
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
     import Icon from "@iconify/svelte";
+
     import type { FAQ } from "$lib/types";
 
     let faq_index: number | null = null;
-
     const faq: FAQ<string>[] = [
         {
             title: "What is DIVD.works, and how does it differ from traditional internship platforms?",
@@ -47,51 +47,31 @@
 
 <Header />
 <main>
-    <!-- FAQ section -->
-    <section
-        class="w-full flex justify-start md:justify-center px-3 lg:px-0 pt-10 bg-white dark:bg-black"
-    >
-        <article
-            class="w-full md:w-4/5 lg:w-7/10 flex justify-center items-start md:items-center flex-col gap-8"
-        >
-            <h1 class="text-purple-500 text-5xl md:text-6xl font-extrabold">
-                FAQ
-            </h1>
-            <p
-                class="text-gray-700 dark:text-gray-300 my-3 text-base sm:text-lg text-left md:text-center"
-            >
+    <section class="section !p-0 !pt-5 lg:!pt-10 bgdefault">
+        <article class="article !items-start md:!items-center">
+            <h1 class="h1">FAQ</h1>
+            <p class="p my-3 text-left md:text-center">
                 There is a lot of information to navigate through, so that's why
                 we have put together a list of Frequent Asked Questions (FAQ).
                 You can also ask us questions on Discord.
             </p>
             {#each faq as { title, description }, index}
                 <button
-                    class="w-full grid grid-cols-1 gap-4 bg-slate-50 dark:bg-slate-950 p-6 text-left
-                    rounded-2xl"
+                    class="w-full grid grid-cols-1 gap-4 bgcolor p-6 text-left rounded-2xl"
                     on:click={(): number =>
                         (faq_index = faq_index == index ? null : index)}
                 >
-                    <h2
-                        class="text-purple-500 text-base sm:text-2xl font-semibold"
-                    >
+                    <h2 class="h2 !text-base sm:!text-2xl">
                         {index + 1}. {title}
                     </h2>
                     {#if faq_index == index}
-                        <Icon
-                            icon="mdi:arrow-up-drop-circle"
-                            class="w-10 h-10 text-black dark:text-white"
-                        />
+                        <Icon icon="mdi:arrow-up-drop-circle" class="icon" />
                         <hr class="text-black dark:text-white" />
-                        <p
-                            class="text-gray-700 dark:text-gray-300 my-3 text-base sm:text-lg"
-                        >
+                        <p class="p my-3">
                             {description}
                         </p>
                     {:else}
-                        <Icon
-                            icon="mdi:arrow-down-drop-circle"
-                            class="w-10 h-10 text-black dark:text-white"
-                        />
+                        <Icon icon="mdi:arrow-down-drop-circle" class="icon" />
                     {/if}
                 </button>
             {/each}
